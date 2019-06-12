@@ -39,7 +39,7 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("view did load")
+        print("ConversionViewController load")
         updateCelsiusLabel()
     }
     
@@ -66,8 +66,17 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     func textField(_ textField: UITextField,
                    shouldChangeCharactersIn range: NSRange,
                    replacementString string: String) -> Bool {
-        print("Current text: \(String(describing: textField.text))")
-        print("Replacement text: \(string)")
-        return true
+//        print("Current text: \(String(describing: textField.text))")
+//        print("Replacement text: \(string)")
+        // 不允许输入两个小数点
+        let existSeparator = textField.text?.range(of: ".")
+//        print("existSeparator range: \(existSeparator)")
+        let nextSeparator = string.range(of: ".")
+        if existSeparator != nil, nextSeparator != nil {
+            return false
+        } else {
+            return true
+        }
+        
     }
 }
