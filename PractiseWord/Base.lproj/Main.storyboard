@@ -33,7 +33,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degrees Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCl-Mw-Ahw">
-                                <rect key="frame" x="59.333333333333343" y="200" width="295.33333333333326" height="43"/>
+                                <rect key="frame" x="59.666666666666629" y="200" width="296" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -45,13 +45,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cm-Rv-ErS">
-                                <rect key="frame" x="149" y="326" width="116.33333333333331" height="83.666666666666686"/>
+                                <rect key="frame" x="148.66666666666666" y="326" width="116.99999999999997" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" red="0.88235294117647056" green="0.34509803921568627" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="degree Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXw-oW-XIg">
-                                <rect key="frame" x="92.666666666666671" y="429.66666666666669" width="228.66666666666663" height="43"/>
+                                <rect key="frame" x="92.666666666666686" y="430" width="229" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -107,17 +107,88 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="L2N-B0-mQq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QVb-eT-FKZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ydH-3R-S4S"/>
                         <segue destination="FKs-23-J3J" kind="relationship" relationship="viewControllers" id="rvp-1T-tvd"/>
+                        <segue destination="oqN-W9-jpU" kind="relationship" relationship="viewControllers" id="ymf-7e-CTA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQM-fC-DsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1531.8840579710145" y="23.64130434782609"/>
+        </scene>
+        <!--测试页-->
+        <scene sceneID="xJP-Dd-evL">
+            <objects>
+                <viewController id="oqN-W9-jpU" customClass="TestViewController" customModule="PractiseWord" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6JW-he-T7w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you ok?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyR-hM-64a">
+                                <rect key="frame" x="162.33333333333334" y="120" width="89.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZb-PR-Mfy">
+                                <rect key="frame" x="157" y="161" width="100" height="30"/>
+                                <state key="normal" title="show question"/>
+                                <connections>
+                                    <action selector="onClick:" destination="oqN-W9-jpU" eventType="touchUpInside" id="JDh-xX-jq9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4P-Le-6uF">
+                                <rect key="frame" x="193.33333333333334" y="291" width="27.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="su4-1a-B3A">
+                                <rect key="frame" x="162.66666666666666" y="332" width="89" height="30"/>
+                                <state key="normal" title="show answer"/>
+                                <connections>
+                                    <action selector="onClick:" destination="oqN-W9-jpU" eventType="touchUpInside" id="mwv-ky-qkK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NextQuestion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezk-tQ-vR2">
+                                <rect key="frame" x="155" y="120" width="104.33333333333331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="su4-1a-B3A" firstAttribute="top" secondItem="c4P-Le-6uF" secondAttribute="bottom" constant="20" id="GDq-oq-KFK"/>
+                            <constraint firstItem="ezk-tQ-vR2" firstAttribute="centerX" secondItem="6JW-he-T7w" secondAttribute="centerX" id="LVK-OD-Hcd"/>
+                            <constraint firstItem="ezk-tQ-vR2" firstAttribute="top" secondItem="cyR-hM-64a" secondAttribute="top" id="SEE-zs-PFQ"/>
+                            <constraint firstItem="YZb-PR-Mfy" firstAttribute="centerX" secondItem="6JW-he-T7w" secondAttribute="centerX" id="Vg8-Ia-b5W"/>
+                            <constraint firstItem="cyR-hM-64a" firstAttribute="centerX" secondItem="6JW-he-T7w" secondAttribute="centerX" id="WlB-hp-Dj0"/>
+                            <constraint firstItem="c4P-Le-6uF" firstAttribute="centerX" secondItem="6JW-he-T7w" secondAttribute="centerX" id="XNI-Ig-bww"/>
+                            <constraint firstItem="c4P-Le-6uF" firstAttribute="top" secondItem="YZb-PR-Mfy" secondAttribute="bottom" constant="100" id="bkb-D6-t0r"/>
+                            <constraint firstItem="YZb-PR-Mfy" firstAttribute="top" secondItem="cyR-hM-64a" secondAttribute="bottom" constant="20" id="cup-Dg-wtm"/>
+                            <constraint firstItem="su4-1a-B3A" firstAttribute="centerX" secondItem="6JW-he-T7w" secondAttribute="centerX" id="cyd-BR-8V8"/>
+                            <constraint firstItem="cyR-hM-64a" firstAttribute="top" secondItem="dOl-zp-6dX" secondAttribute="top" constant="100" id="tkJ-0S-UAi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dOl-zp-6dX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="测试页" id="jdt-3f-r7k"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="c4P-Le-6uF" id="cuE-gA-96a"/>
+                        <outlet property="currentQuestionLabel" destination="cyR-hM-64a" id="auI-Xb-mMP"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="WlB-hp-Dj0" id="ipb-nX-slE"/>
+                        <outlet property="nextQuestionLabel" destination="ezk-tQ-vR2" id="ENW-Mo-fpP"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="LVK-OD-Hcd" id="w8p-AN-oYT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Drc-ej-mOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2439" y="769"/>
         </scene>
     </scenes>
     <resources>
